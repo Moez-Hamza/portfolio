@@ -1,0 +1,65 @@
+import React from "react";
+
+export default function Aboutme() {
+    return (
+        <section className="bg-white dark:bg-gray-800">
+            <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+                <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+                    About me
+                </h1>
+            </div>
+            <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+                <div className="text-container max-w-6xl mx-auto pt-20">
+                    <p
+                        className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
+                        style={{ lineHeight: "3rem" }}
+                    >
+                        I am a full stack JS developer. Dynamic, fast learner and a good communicator.
+                        I used to be an architect and changed my career to become a full stack developer. Through both disciplines, I learned a lot about how to solve problems and be creative.
+                        I'm looking to implement both what I learned at RBK and my latest experience at a good company.
+                    </p>
+                </div>
+            </div>
+            <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
+                <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
+                    <div className="inline-flex flex-col">
+                        <div>
+                            <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+                                Contact
+                            </h1>
+                            <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+                                For any sort help / enquiry, shoot a{" "}
+                                <a
+                                    href={`mailto:hamza.moez@gmail.com`}
+                                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                                >
+                                    mail
+                                </a>{" "}
+                                and I'll get back. I swear.
+                            </p>
+                        </div>
+                        <div className="mt-8">
+                            <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+                                Job Opportunities
+                            </h1>
+                            <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+                                I'm looking for a job currently, If you see me as a good fit,
+                                check my{" "}
+                                <a
+                                    href='https://drive.google.com/file/d/1gcxMM4434k7fMv2z2Hd5Z9MDYB2yTqaM/view?usp=sharing'
+                                    target="__blank"
+                                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                                >
+                                    CV
+                                </a>{" "}
+                                and I'd love to work for you.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    )
+}
