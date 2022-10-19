@@ -28,12 +28,12 @@ export default function Aboutme() {
                                 Contact
                             </h1>
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                                For any sort help / enquiry, shoot a{" "}
+                                For any sort help / enquiry, shoot an{" "}
                                 <a
                                     href={`mailto:hamza.moez@gmail.com`}
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
-                                    mail
+                                    email
                                 </a>{" "}
                                 and I will get back to you.
                             </p>
@@ -52,7 +52,7 @@ export default function Aboutme() {
                                 >
                                     CV
                                 </a>{" "}
-                                and I wouldd love to work for you.
+                                and I would love to work for you.
                             </p>
                         </div>
 
