@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from "./Navbar";
 import Head from "next/head";
+import Footer from './Footer';
+
 import { useRouter } from "next/router";
 
 
@@ -8,7 +10,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const router = useRouter();
   const meta = {
-    title: "Moez Hamza - Developer, Architect,Pianist and Dj",
+    title: "Moez Hamza - Developer, Architect,Pianist and Music Producer",
     description: `I'am a fresh developer and a huge fan of music. Get in touch with me to know more`,
     image: "/avatar.png",
     type: "website",
@@ -45,6 +47,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <main className="dark:bg-gray-800 w-full">
         <Navbar />
         <div>{children}</div>
+        <Footer />
       </main>
     </div>
   );
