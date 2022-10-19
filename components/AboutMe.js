@@ -43,7 +43,7 @@ export default function Aboutme() {
                                 Job Opportunities
                             </h1>
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                                I am looking for a job currently, If you see me as a good fit,
+                                Currently I am looking for a opportunities, If you see me as a good fit,
                                 check my{" "}
                                 <a
                                     href='https://drive.google.com/file/d/1gcxMM4434k7fMv2z2Hd5Z9MDYB2yTqaM/view?usp=sharing'
