@@ -16,7 +16,7 @@ export default function Aboutme() {
                     >
                         I am a full stack JS developer. Dynamic, fast learner and a good communicator.
                         I used to be an architect and changed my career to become a full stack developer. Through both disciplines, I learned a lot about how to solve problems and be creative.
-                        I'm looking to implement both what I learned at RBK and my latest experience at a good company.
+                        I am looking to implement both what I learned at RBK and my latest experience at a good company.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export default function Aboutme() {
                                 >
                                     mail
                                 </a>{" "}
-                                and I'll get back to you.
+                                and I will get back to you.
                             </p>
                         </div>
                         <div className="mt-8">
@@ -43,7 +43,7 @@ export default function Aboutme() {
                                 Job Opportunities
                             </h1>
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                                I'm looking for a job currently, If you see me as a good fit,
+                                I am looking for a job currently, If you see me as a good fit,
                                 check my{" "}
                                 <a
                                     href='https://drive.google.com/file/d/1gcxMM4434k7fMv2z2Hd5Z9MDYB2yTqaM/view?usp=sharing'
@@ -52,7 +52,7 @@ export default function Aboutme() {
                                 >
                                     CV
                                 </a>{" "}
-                                and I'd love to work for you.
+                                and I wouldd love to work for you.
                             </p>
                         </div>
 
