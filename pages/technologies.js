@@ -1,11 +1,11 @@
 import React from "react";
 import ContainerBlock from "../components/ContainerBlock";
-import Experience from "../components/Experience";
+import Technologies from "../components/Technologies";
 
 export default function about() {
   return (
     <ContainerBlock>
-      <Experience />
+      <Technologies />
     </ContainerBlock>
   );
 }
