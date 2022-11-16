@@ -46,7 +46,7 @@ export default function Aboutme() {
                                 Currently I am looking for new opportunities, If you see me as a good fit,
                                 check my{" "}
                                 <a
-                                    href='https://drive.google.com/file/d/1oZFs5V4D1mMFH8Kn7EkgQmlx5mX7Ti5X/view'
+                                    href='https://drive.google.com/file/d/1Jee5uDlTjcJaoMsJAcMHfv8m0PImipgz/view?usp=sharing'
                                     target="__blank"
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
