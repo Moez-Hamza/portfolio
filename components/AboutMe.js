@@ -46,13 +46,13 @@ export default function Aboutme() {
                                 Currently I am looking for new opportunities, If you see me as a good fit,
                                 check my{" "}
                                 <a
-                                    href='https://drive.google.com/file/d/1gcxMM4434k7fMv2z2Hd5Z9MDYB2yTqaM/view?usp=sharing'
+                                    href='https://drive.google.com/file/d/1ZkY4YeEuJr_2i8jvpFWzlaqgik44g4gd/view?usp=sharing'
                                     target="__blank"
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
                                     resume.
                                 </a>{" "}
-                             
+
                             </p>
                         </div>
 
