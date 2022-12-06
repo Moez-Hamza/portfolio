@@ -14,9 +14,9 @@ export default function Aboutme() {
                         className="leading-loose text-2xl md:text-4xl font-semibold"
                         style={{ lineHeight: "3rem" }}
                     >
-                        I am a full stack JS developer. Dynamic, fast learner and a good communicator.
-                        I used to be an architect and changed my career to become a full stack developer. Through both disciplines, I learned a lot about how to solve problems and be creative.
-                        I am looking to implement both what I learned at RBK and my latest experience at a good company.
+                        I am a freshly graduated full stack JavaScript developer.
+                        Passionate about IT, i learned to code using JavaScript frameworks and took the opportunity to create personal and team projects . I master the different technical stages of creating a website or applications from understanding the user needs, to frontend and backend development and maintenance.
+                        Currently i seek to apply what i learned in a good position and within a good company .
                     </p>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default function Aboutme() {
                                 Currently I am looking for new opportunities, If you see me as a good fit,
                                 check my{" "}
                                 <a
-                                    href='https://drive.google.com/file/d/1o8O1TXDfhX0QUHWjP94HtBq9EJ2V0GF6/view?usp=sharing'
+                                    href='https://drive.google.com/file/d/1NSvXez4oKCKXbGe57t7-1U7USXvMIuQ-/view?usp=sharing'
                                     target="__blank"
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
