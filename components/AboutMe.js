@@ -14,9 +14,9 @@ export default function Aboutme() {
                         className="leading-loose text-2xl md:text-4xl font-semibold"
                         style={{ lineHeight: "3rem" }}
                     >
-                        I am a freshly graduated full stack JavaScript developer.
-                        Passionate about IT, i learned to code using JavaScript frameworks and took the opportunity to create personal and team projects . I master the different technical stages of creating a website or applications from understanding the user needs, to frontend and backend development and maintenance.
-                        Currently i seek to apply what i learned in a good position and within a good company .
+                        As a recent graduate in full stack JavaScript development, I have a strong passion for technology and a solid foundation in coding using various JavaScript frameworks. Throughout my education, I gained hands-on experience in creating personal and team projects, mastering the technical stages of website and application development, from user needs analysis to front-end and back-end development and maintenance.
+        
+                        Currently, I am working as a Junior Mobile Developer at ST2i in Tunisia, where I am expanding my skillset by learning how to work with Ionic/Angular. I am excited to be contributing to large-scale projects and am proud of the progress I have made in my career.
                     </p>
                 </div>
             </div>
