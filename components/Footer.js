@@ -1,16 +1,26 @@
 import React from "react";
+import { mono, serif } from "../lib/theme";
 
-export default function Footer() {
-    let date = new Date()
-    return (
-        <footer className="footer footer-center bg-[#F1F1F1] dark:bg-gray-900">
-            <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-                <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
-                <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8"></div>
-                <center><p>Copyright © {date.getFullYear()} - Moez Hamza</p></center>
-            </div>
-        </footer>
-
-    )
-
+export default function Footer({ t, c }) {
+  return (
+    <footer
+      className="site-footer"
+      style={{
+        background: c.footer_bg,
+        borderTop: `1px solid ${c.bp_line}`,
+        padding: "1.5rem 2rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        gap: "1rem",
+        flexWrap: "wrap",
+      }}
+    >
+      <span style={{ fontFamily: mono, color: c.bp_label, fontSize: "0.68rem", letterSpacing: "0.08em" }}>
+        © {new Date().getFullYear()} MOEZ HAMZA
+      </span>
+      <span style={{ fontFamily: serif, fontStyle: "italic", color: c.gold, fontSize: "0.78rem" }}>{t.footer}</span>
+      <span style={{ fontFamily: mono, color: c.bp_label, fontSize: "0.62rem" }}>REV.2025.06</span>
+    </footer>
+  );
 }
