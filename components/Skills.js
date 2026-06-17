@@ -2,6 +2,7 @@ import React from "react";
 import { mono, serif } from "../lib/theme";
 import { GridBg, RuledBg, SectionLabel } from "./atoms";
 import { SKILLS, CERT } from "../data/content";
+import Reveal from "./Reveal";
 
 export default function Skills({ t, c }) {
   return (
@@ -10,8 +11,8 @@ export default function Skills({ t, c }) {
       <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
         <SectionLabel text={t.skills_title} c={c} />
         <div className="two-col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-          {SKILLS.map((s) => (
-            <div key={s.name} style={{ background: "rgba(82,140,220,0.05)", border: `1px solid ${c.bp_line}`, padding: "0.7rem 1rem" }}>
+          {SKILLS.map((s, i) => (
+            <Reveal key={s.name} delay={i * 60} style={{ background: "rgba(82,140,220,0.05)", border: `1px solid ${c.bp_line}`, padding: "0.7rem 1rem" }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "5px" }}>
                 <span style={{ fontFamily: mono, color: c.bp_text, fontSize: "0.82rem" }}>{s.name}</span>
                 <span style={{ fontFamily: mono, color: c.gold, fontSize: "0.72rem" }}>{s.level}%</span>
@@ -19,12 +20,14 @@ export default function Skills({ t, c }) {
               <div style={{ height: "3px", background: "rgba(82,140,220,0.12)" }}>
                 <div style={{ height: "100%", width: `${s.level}%`, background: `linear-gradient(90deg,${c.gold_dark},${c.gold})` }} />
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 
         {/* cert — paper card on blueprint bg */}
-        <a
+        <Reveal
+          as="a"
+          delay={120}
           href={CERT.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -34,8 +37,9 @@ export default function Skills({ t, c }) {
             textDecoration: "none",
             background: c.paper_bg,
             padding: "1.2rem 1.5rem",
-            border: `1px solid ${c.bp_line}`,
+            border: `1px solid ${c.card_border}`,
             borderLeft: `3px solid ${c.gold}`,
+            boxShadow: c.panel_shadow,
             position: "relative",
             overflow: "hidden",
             transition: "border-left-color 0.2s",
@@ -54,7 +58,7 @@ export default function Skills({ t, c }) {
             </div>
             <span style={{ fontFamily: mono, color: c.gold, fontSize: "0.8rem" }}>↗</span>
           </div>
-        </a>
+        </Reveal>
       </div>
     </section>
   );

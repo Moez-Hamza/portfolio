@@ -1,5 +1,6 @@
 import React from "react";
 import { mono } from "../lib/theme";
+import Reveal from "./Reveal";
 
 export const GridBg = ({ c }) => (
   <div
@@ -26,7 +27,7 @@ export const RuledBg = ({ c }) => (
 );
 
 export const SectionLabel = ({ text, c }) => (
-  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2.5rem" }}>
+  <Reveal style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2.5rem" }}>
     <h2
       style={{
         fontFamily: mono,
@@ -42,5 +43,5 @@ export const SectionLabel = ({ text, c }) => (
     </h2>
     <div style={{ flex: 1, height: "1px", background: `linear-gradient(90deg,${c.bp_line},transparent)` }} />
     <span style={{ fontFamily: mono, fontSize: "0.6rem", color: c.bp_label }}>§</span>
-  </div>
+  </Reveal>
 );

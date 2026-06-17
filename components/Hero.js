@@ -3,6 +3,7 @@ import { mono, serif } from "../lib/theme";
 import { GridBg, RuledBg } from "./atoms";
 import { sketchBtn } from "../lib/theme";
 import { PROFILE } from "../data/content";
+import Reveal from "./Reveal";
 
 export default function Hero({ t, c }) {
   return (
@@ -35,7 +36,7 @@ export default function Hero({ t, c }) {
         }}
       >
         {/* Photo + blueprint frame */}
-        <div style={{ position: "relative", flexShrink: 0 }}>
+        <Reveal className="soft" style={{ position: "relative", flexShrink: 0 }}>
           {[["top", "left"], ["top", "right"], ["bottom", "left"], ["bottom", "right"]].map(([v, h], i) => (
             <div
               key={i}
@@ -78,10 +79,11 @@ export default function Hero({ t, c }) {
             <span style={{ fontFamily: mono, fontSize: "0.6rem", color: c.gold, writingMode: "vertical-lr" }}>230</span>
             <div style={{ width: "1px", height: "20px", background: c.gold }} />
           </div>
-        </div>
+        </Reveal>
 
         {/* Paper card */}
-        <div className="hero-card" style={{ flex: 1, position: "relative", background: c.paper_bg, padding: "2rem 2rem 2rem 2.5rem", borderLeft: `3px solid ${c.red}`, overflow: "hidden" }}>
+        <Reveal delay={140} className="hero-card" style={{ flex: 1 }}>
+        <div style={{ position: "relative", background: c.paper_bg, padding: "2rem 2rem 2rem 2.5rem", border: `1px solid ${c.card_border}`, borderLeft: `3px solid ${c.red}`, boxShadow: c.panel_shadow, overflow: "hidden" }}>
           <RuledBg c={c} />
           <div style={{ position: "relative", zIndex: 1 }}>
             <div style={{ fontFamily: mono, fontSize: "0.62rem", color: c.ink3, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.4rem" }}>
@@ -91,7 +93,7 @@ export default function Hero({ t, c }) {
               {PROFILE.name}
             </h1>
             <svg width="170" height="6" style={{ display: "block", marginBottom: "1rem" }}>
-              <path d="M2,4 Q42,1 88,3 Q134,5 168,2" stroke={c.red} strokeWidth="1.8" fill="none" strokeLinecap="round" />
+              <path className="draw-path" pathLength="1" d="M2,4 Q42,1 88,3 Q134,5 168,2" stroke={c.red} strokeWidth="1.8" fill="none" strokeLinecap="round" />
             </svg>
             <p style={{ fontFamily: serif, fontStyle: "italic", color: c.ink2, fontSize: "0.93rem", lineHeight: 1.7, margin: "0 0 1.5rem" }}>
               {t.hero_sub}
@@ -109,6 +111,7 @@ export default function Hero({ t, c }) {
             </span>
           </div>
         </div>
+        </Reveal>
       </div>
 
       <div style={{ position: "absolute", bottom: "1.5rem", left: "2rem", fontFamily: mono, fontSize: "0.58rem", color: c.bp_label, letterSpacing: "0.1em" }}>

@@ -2,7 +2,7 @@
 // Sourced from data/cv.json (rxresu.me export) + the blueprint design brief.
 
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1NSvXez4oKCKXbGe57t7-1U7USXvMIuQ-/view?usp=sharing";
+  "https://drive.google.com/file/d/1K20xeZrHmuBy3eAKelFfX4x5TUVsnteU/view?usp=sharing";
 
 export const PROFILE = {
   name: "Moez Hamza",

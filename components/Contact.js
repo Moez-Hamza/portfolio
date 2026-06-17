@@ -3,6 +3,7 @@ import { mono, serif } from "../lib/theme";
 import { GridBg, RuledBg, SectionLabel } from "./atoms";
 import { sketchBtn } from "../lib/theme";
 import { PROFILE, RESUME_URL } from "../data/content";
+import Reveal from "./Reveal";
 
 export default function Contact({ t, c }) {
   const contacts = [
@@ -17,7 +18,7 @@ export default function Contact({ t, c }) {
       <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
         <SectionLabel text={t.contact_title} c={c} />
         <div className="two-col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem" }}>
-          <div>
+          <Reveal>
             <p style={{ fontFamily: serif, fontStyle: "italic", color: c.bp_text, lineHeight: 1.8, marginBottom: "1.75rem", fontSize: "0.93rem" }}>
               {t.contact_sub}
             </p>
@@ -48,8 +49,8 @@ export default function Contact({ t, c }) {
                 </a>
               ))}
             </div>
-          </div>
-          <div style={{ background: c.paper_bg, padding: "1.75rem", border: `1px solid ${c.bp_line}`, borderLeft: `3px solid ${c.red}`, position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
+          </Reveal>
+          <Reveal delay={140} style={{ background: c.paper_bg, padding: "1.75rem", border: `1px solid ${c.card_border}`, borderLeft: `3px solid ${c.red}`, boxShadow: c.panel_shadow, position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
             <RuledBg c={c} />
             <div style={{ position: "relative", zIndex: 1 }}>
               <div style={{ fontFamily: mono, fontSize: "0.6rem", color: c.ink3, letterSpacing: "0.1em", marginBottom: "0.5rem" }}>{"// note"}</div>
@@ -61,7 +62,7 @@ export default function Contact({ t, c }) {
                 <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" style={sketchBtn("outline", c)}>{t.dl}</a>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

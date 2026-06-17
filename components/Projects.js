@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { mono, serif, sans } from "../lib/theme";
 import { RuledBg, SectionLabel } from "./atoms";
 import { PRO, SCHOOL } from "../data/content";
+import Reveal from "./Reveal";
 
 export default function Projects({ t, lang, c }) {
   const [tab, setTab] = useState("pro");
   const projects = tab === "pro" ? PRO : SCHOOL;
   return (
-    <section id="projets" style={{ background: c.paper_bg2, position: "relative", overflow: "hidden", padding: "5rem 2rem" }}>
+    <section id="projets" style={{ background: c.paper_bg2, borderTop: `1px solid ${c.bp_line}`, borderBottom: `1px solid ${c.bp_line}`, position: "relative", overflow: "hidden", padding: "5rem 2rem" }}>
       <RuledBg c={c} />
       <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
         <SectionLabel text={t.projects_title} c={c} />
@@ -36,12 +37,14 @@ export default function Projects({ t, lang, c }) {
         </div>
         <div style={{ display: "grid", gap: "1rem" }}>
           {projects.map((p, i) => (
-            <div
-              key={i}
+            <Reveal
+              key={`${tab}-${i}`}
+              delay={i * 90}
               style={{
                 background: c.paper_bg,
                 border: `1px solid ${c.card_border}`,
                 borderLeft: `3px solid ${c.bp_line}`,
+                boxShadow: c.panel_shadow,
                 padding: "1.25rem 1.5rem",
                 position: "relative",
                 overflow: "hidden",
@@ -90,7 +93,7 @@ export default function Projects({ t, lang, c }) {
                   </a>
                 )}
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

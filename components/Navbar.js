@@ -3,7 +3,7 @@ import { mono, serif } from "../lib/theme";
 
 const ids = ["a-propos", "competences", "projets", "contact"];
 
-export default function Navbar({ t, lang, setLang, dark, setDark, c }) {
+export default function Navbar({ t, lang, setLang, c }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -84,20 +84,6 @@ export default function Navbar({ t, lang, setLang, dark, setDark, c }) {
           }}
         >
           {lang === "fr" ? "EN" : "FR"}
-        </button>
-        <button
-          onClick={() => setDark((d) => !d)}
-          aria-label="Toggle dark mode"
-          style={{
-            background: "rgba(82,140,220,0.12)",
-            border: `1px solid ${c.bp_line}`,
-            borderRadius: "3px",
-            cursor: "pointer",
-            fontSize: "0.9rem",
-            padding: "3px 7px",
-          }}
-        >
-          {dark ? "☀️" : "🌙"}
         </button>
       </div>
     </nav>
