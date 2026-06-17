@@ -1,0 +1,384 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "https://rxresu.me/api/uploads/019e06c9-ba69-735c-98b9-5a6db75c3278/pictures/1778233473749.jpeg",
+    "size": 80,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0.5)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 1)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Moez Hamza",
+    "headline": "Full Stack Developer",
+    "email": "hamza.moez@gmail.com",
+    "phone": "+216 24 418 464 ",
+    "location": "Tunis",
+    "website": {
+      "url": "",
+      "label": ""
+    },
+    "customFields": [
+      {
+        "id": "019e06f8-5c50-739a-b0f1-7a47f5d0c0dc",
+        "icon": "linkedin-logo",
+        "text": "moez-hamza",
+        "link": "https://www.linkedin.com/in/moez-hamza/"
+      },
+      {
+        "id": "019e8ce4-0ed2-72dd-a929-e757fe1758cf",
+        "icon": "github-logo",
+        "text": "Moez-Hamza",
+        "link": "https://github.com/Moez-Hamza"
+      }
+    ]
+  },
+  "summary": {
+    "title": "",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Ancien architecte reconverti dans le développement web, j’aime créer des solutions utiles et relever de nouveaux défis. Curieux et passionné par les nouvelles technologies, je recherche un environnement stimulant où continuer à évoluer et avoir un réel impact.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06cd-13d7-7158-bd00-d21079f8b587",
+          "hidden": true,
+          "icon": "linkedin-logo",
+          "iconColor": "rgba(21, 93, 252, 1)",
+          "network": "LinkedIn",
+          "username": "moez-hamza",
+          "website": {
+            "url": "https://www.linkedin.com/in/moez-hamza/",
+            "label": "",
+            "inlineLink": false
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06ce-418f-7648-b181-257844a44e75",
+          "hidden": false,
+          "company": "Slashup Studio",
+          "position": "Développeur Full Stack",
+          "location": "Tunis",
+          "period": "03/2024 - 10/2025",
+          "website": {
+            "url": "https://www.slashup.studio/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": "<p></p>",
+          "roles": []
+        },
+        {
+          "id": "019e06d4-8772-73f8-976b-22a4473215a3",
+          "hidden": false,
+          "company": "ST2I - Groupe STUDI",
+          "position": "Développeur Full Stack",
+          "location": "Tunis",
+          "period": "01/2023 – 03/2024",
+          "website": {
+            "url": "https://www.st2i.com.tn/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": "",
+          "roles": []
+        },
+        {
+          "id": "019e06f3-f780-745d-98cb-2e38a6f4c526",
+          "hidden": false,
+          "company": "Agence Foncière d'Habitation (AFH)",
+          "position": "Architecte principal",
+          "location": "Tunis",
+          "period": "2017 - 2022",
+          "website": {
+            "url": "https://www.afh.nat.tn/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": "",
+          "roles": []
+        },
+        {
+          "id": "019e06f5-4a27-709d-93bb-03cdba91003a",
+          "hidden": false,
+          "company": "H2M Architecture",
+          "position": "Architecte co Fondateur",
+          "location": "Tunis",
+          "period": "2013 - 2016",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Fondateur et responsable d’un cabinet d’architecture indépendant, avec gestion de projets de conception et suivi client</p>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06d5-6a03-72a9-8be0-f29e3201bd17",
+          "hidden": false,
+          "school": "Ecole Nationale d'Architecture et d'Urbanisme (ENAU)",
+          "degree": "",
+          "area": "Architecture",
+          "grade": "",
+          "location": "Sidi Bou Said, Tunis",
+          "period": "2006 - 2013",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "019e06d6-2dc5-7173-b23c-7893f8d2f0f1",
+          "hidden": false,
+          "school": "Lycée Menzah 9 ",
+          "degree": "",
+          "area": "baccalaureat mathematiques",
+          "grade": "",
+          "location": "Tunis",
+          "period": "2006",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projets",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06d6-bd6f-728a-a887-8d82dc5ec15b",
+          "hidden": false,
+          "name": "IOSIS (Web App)",
+          "period": "2025",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p><span style=\"color: rgb(71, 71, 71);\">IOSIS est une plateforme de gestion dynamique qui permet à l'utilisateur de définir ses propres entités et workflows.</span></p><p>Participation au développement d’une plateforme de gestion dynamique et optimisation de composants réutilisables pour améliorer la cohérence et la maintenabilité des projets.</p><p></p>"
+        },
+        {
+          "id": "019e06d8-cd86-7389-9695-36ac971dfb78",
+          "hidden": false,
+          "name": "Koors.io",
+          "period": "2024",
+          "website": {
+            "url": "https://www.koors.io/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": "<p><span style=\"color: rgb(71, 71, 71);\">Koors est un système de gestion de l'apprentissage conçu pour offrir une plateforme complète aux institutions éducatives. Il permet la gestion des cours, le suivi des performances des étudiants, et l'intégration d'outils collaboratifs pour enrichir l'expérience d'apprentissage en ligne.<br></span></p><p></p>"
+        },
+        {
+          "id": "019e06dc-3183-77da-82a4-5f52f163341e",
+          "hidden": false,
+          "name": "Tuneps",
+          "period": "2023",
+          "website": {
+            "url": "https://www.tuneps.tn/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": "<p><span style=\"color: rgb(71, 71, 71);\">TUNEPS (Tunisian Electronic Procurement System) est une plateforme en ligne développée par le gouvernement tunisien.</span></p><p><span style=\"color: rgb(71, 71, 71);\">Refonte des fonctionnalités clés (soumission des offres, gestion des données chiffrées), augmentant lʼefficacité de <strong>20%</strong>.</span></p><p><span style=\"color: rgb(71, 71, 71);\">Développement dʼune version mobile avec <strong>Ionic &amp; Angular</strong>, assurant la compatibilité multiplateforme.</span></p><p></p>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06df-83f4-741d-9c76-183537036e68",
+          "hidden": false,
+          "icon": "acorn",
+          "iconColor": "",
+          "name": "Technologies",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "SQL",
+            "MongoDB",
+            "Docker",
+            "Git",
+            "CI/CD"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "interests": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e06e5-504b-76f8-9d8d-909cc7082f9a",
+          "hidden": false,
+          "title": "Full stack JavaScript developer",
+          "issuer": "RBK Tunisia December 2022",
+          "date": "",
+          "website": {
+            "url": "https://verified.sertifier.com/en/verify/34836835816124/",
+            "label": "",
+            "inlineLink": true
+          },
+          "description": ""
+        }
+      ]
+    },
+    "publications": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "onyx",
+    "layout": {
+      "sidebarWidth": 30.54,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "profiles",
+            "summary",
+            "skills",
+            "experience",
+            "projects",
+            "education",
+            "certifications",
+            "volunteer",
+            "references",
+            "awards",
+            "languages",
+            "interests",
+            "publications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "page": {
+      "gapX": 10,
+      "gapY": 6,
+      "marginX": 14,
+      "marginY": 10,
+      "format": "a4",
+      "locale": "fr-FR",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(69, 85, 108, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "400",
+          "500"
+        ],
+        "fontSize": 10,
+        "lineHeight": 1
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 15,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": "",
+    "styleRules": []
+  }
+}

@@ -1,98 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
+import { mono, serif, sans } from "../lib/theme";
+import { RuledBg, SectionLabel } from "./atoms";
+import { PRO, SCHOOL } from "../data/content";
 
-
-
-
-export default function Projects() {
-    const myProjects =[
-        {
-         id:1,
-         title:'Piano Symphony',
-         description:'A website that regroups piano sheets and follows the progress of the user, you can login and sign in and also view profiles and see demos if you need help',
-         link:'https://www.youtube.com/watch?v=cVNRnV1_-Ls' ,
-         imgUrl: 'https://res.cloudinary.com/dafqx8f7o/image/upload/v1666173997/Screenshot_2022-10-19_at_10.57.32_ax6l8l.png',
-         code:'https://github.com/Piano-Symphony/Symphony'
-        },
-        {
-            id:2,
-            title:'Better Body',
-            description:'A website that helps people to start working out, the user can login and sign in and according to his objective he can find the program that fits him',
-            link:'https://www.youtube.com/watch?v=SLcXRAdgGDA&t=6s&ab_channel=HaythemBensouissi',
-            imgUrl:'https://res.cloudinary.com/dafqx8f7o/image/upload/v1666177660/BetterBody_wyg3yo.png',
-            code:'https://github.com/RBK-hachers/Better-Body'
-        },
-        {   
-            id:3,
-            title:'Kampy',
-            description:'Our thesis project a mobile app that connects all the campers, the user can login and sign in in order to find posts, events, shop, weather, chats and a map with the most popular camping locations in Tunisia',
-            link:'https://www.youtube.com/watch?v=LpejaeS5xMo&ab_channel=myworld',
-            imgUrl:'https://res.cloudinary.com/dafqx8f7o/image/upload/v1666178132/Kampy_ex3pts.png',
-            code:'https://github.com/Always-number-one/Kampy'
-        },
-        {
-            id:4,
-            title:'Kampy Admin Dashboard',
-            description:'The dashboard of the kampy app to see all the data and where the admin can ban and delete posts and see all the data of the mobile app',
-            link:'https://www.youtube.com/watch?v=3o8gcmQpaGo&ab_channel=myworld',
-            imgUrl:'https://res.cloudinary.com/dafqx8f7o/image/upload/v1666183019/Kampy_Admin_qglat7.png',
-            code:'https://github.com/Always-number-one/Kampy-Admin'
-        },
-
-
-
-    ]
-
-    return (
-        <section className="bg-white dark:bg-gray-800">
-            <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-                <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-                    Projects
-                </h1>
-            </div>
-            {/* Grid starts here */}
-            <div className="bg-[#F1F1F1] dark:bg-gray-900">
-                
-
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-                   {myProjects.map(({title,description,link,imgUrl,code,id})=>
-                    <ProjectCard key={id} title= {title} description={description} link={link} imgUrl={imgUrl} code={code} />
-                   )}
-                </div>
-            </div>
-        </section>
-
-    )
-
-}
-
-const ProjectCard = ({ title, link, imgUrl, code,description }) => {
-    return (
-        <div className="w-full block shadow-2xl rounded-lg" >
-            <div className="relative overflow-hidden">
-                <div className="h-72 object-cover">
-                    <img
-                        src={imgUrl}
-                        alt="portfolio"
-                        className="transform hover:scale-110 transition duration-2000 ease-out object-cover h-full w-full"
-                    />
-                </div>
-                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                    {title}
-                </h1>
-                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                </h1>
-            <div className="flex items-center justify-center">
-                <a href={code}>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-bold" href={code}>Code</button>
-                </a>
-                <a href={link}>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-bold" href={link}>Demo</button>
-                </a>
-            </div>
-            <center><p className="">
-                {description}
-            </p></center>
-            </div>
+export default function Projects({ t, lang, c }) {
+  const [tab, setTab] = useState("pro");
+  const projects = tab === "pro" ? PRO : SCHOOL;
+  return (
+    <section id="projets" style={{ background: c.paper_bg2, position: "relative", overflow: "hidden", padding: "5rem 2rem" }}>
+      <RuledBg c={c} />
+      <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <SectionLabel text={t.projects_title} c={c} />
+        <div style={{ display: "flex", gap: "0.5rem", marginBottom: "2rem" }}>
+          {["pro", "school"].map((k) => (
+            <button
+              key={k}
+              onClick={() => setTab(k)}
+              style={{
+                padding: "0.4rem 1.2rem",
+                cursor: "pointer",
+                fontFamily: mono,
+                fontSize: "0.7rem",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                transition: "all 0.2s",
+                borderRadius: "2px",
+                background: tab === k ? c.ink : "transparent",
+                color: tab === k ? c.paper_bg : c.ink2,
+                border: `1.5px solid ${tab === k ? c.ink : c.card_border}`,
+              }}
+            >
+              {k === "pro" ? t.pro_label : t.school_label}
+            </button>
+          ))}
         </div>
-    );
-};
+        <div style={{ display: "grid", gap: "1rem" }}>
+          {projects.map((p, i) => (
+            <div
+              key={i}
+              style={{
+                background: c.paper_bg,
+                border: `1px solid ${c.card_border}`,
+                borderLeft: `3px solid ${c.bp_line}`,
+                padding: "1.25rem 1.5rem",
+                position: "relative",
+                overflow: "hidden",
+                transition: "border-left-color 0.2s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = c.gold)}
+              onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = c.bp_line)}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  width: "35%",
+                  backgroundImage: `repeating-linear-gradient(transparent,transparent 27px,${c.ruled} 27px,${c.ruled} 28px)`,
+                  backgroundPosition: "0 16px",
+                  pointerEvents: "none",
+                  opacity: 0.5,
+                }}
+              />
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.4rem", alignItems: "flex-start", gap: "0.75rem", position: "relative" }}>
+                <div>
+                  <span style={{ fontFamily: sans, fontWeight: 700, color: c.ink, fontSize: "0.98rem" }}>{p.name}</span>
+                  <span style={{ fontFamily: serif, fontStyle: "italic", color: c.ink3, fontSize: "0.76rem", marginLeft: "0.75rem" }}>{p.type[lang]}</span>
+                </div>
+                <span style={{ fontFamily: mono, color: c.gold, fontSize: "0.72rem", flexShrink: 0 }}>{p.year}</span>
+              </div>
+              <p style={{ fontFamily: serif, fontStyle: "italic", color: c.ink2, fontSize: "0.87rem", lineHeight: 1.65, margin: "0 0 0.75rem", position: "relative" }}>
+                {p.desc[lang]}
+              </p>
+              <div style={{ display: "flex", gap: "0.45rem", flexWrap: "wrap", alignItems: "center", position: "relative" }}>
+                {p.tags.map((tg) => (
+                  <span key={tg} style={{ fontFamily: mono, fontSize: "0.66rem", padding: "2px 8px", background: c.tag_bg, color: c.tag_text, border: `1px solid ${c.card_border}`, borderRadius: "2px" }}>
+                    {tg}
+                  </span>
+                ))}
+                {p.code && (
+                  <a href={p.code} target="_blank" rel="noopener noreferrer" style={{ fontFamily: mono, fontSize: "0.66rem", color: c.gold, textDecoration: "none", border: `1px solid ${c.gold}`, padding: "2px 8px", borderRadius: "2px" }}>
+                    ↗ {t.code}
+                  </a>
+                )}
+                {p.link && (
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" style={{ fontFamily: mono, fontSize: "0.66rem", color: c.red, textDecoration: "none", border: `1px solid ${c.red}`, padding: "2px 8px", borderRadius: "2px" }}>
+                    ▶ {t.demo}
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -6,8 +6,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,3 +20,25 @@ a {
   box-sizing: border-box;
 }
 
+/* ── Responsive (blueprint layout) ───────────────────────────── */
+@media (max-width: 760px) {
+  .hero-inner {
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+    text-align: left;
+  }
+  .hero-card {
+    width: 100%;
+  }
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .nav-sections {
+    display: none !important;
+  }
+  .site-footer {
+    justify-content: center !important;
+    text-align: center;
+  }
+}
