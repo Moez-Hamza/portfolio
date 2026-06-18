@@ -1,8 +1,10 @@
 // Centralised, data-driven content for the portfolio.
 // Sourced from data/cv.json (rxresu.me export) + the blueprint design brief.
 
-export const RESUME_URL =
-  "https://drive.google.com/file/d/1K20xeZrHmuBy3eAKelFfX4x5TUVsnteU/view?usp=sharing";
+export const RESUME_URL = {
+  fr: "https://drive.google.com/file/d/1K20xeZrHmuBy3eAKelFfX4x5TUVsnteU/view?usp=sharing",
+  en: "https://drive.google.com/file/d/1c7gBRWXBpaTXTVwwJqO0RXab2_wEf0oL/view?usp=sharing"
+};
 
 export const PROFILE = {
   name: "Moez Hamza",

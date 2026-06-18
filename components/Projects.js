@@ -39,7 +39,8 @@ export default function Projects({ t, lang, c }) {
           {projects.map((p, i) => (
             <Reveal
               key={`${tab}-${i}`}
-              delay={i * 90}
+              delay={i * 120}
+              threshold={0.1}
               style={{
                 background: c.paper_bg,
                 border: `1px solid ${c.card_border}`,

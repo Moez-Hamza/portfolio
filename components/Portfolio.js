@@ -33,7 +33,7 @@ export default function Portfolio() {
       <About t={t} lang={lang} c={c} />
       <Skills t={t} c={c} />
       <Projects t={t} lang={lang} c={c} />
-      <Contact t={t} c={c} />
+      <Contact t={t} c={c} lang={lang} />
       <Footer t={t} c={c} />
     </div>
   );
